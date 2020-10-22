@@ -1,0 +1,36 @@
+{
+    "name": "jethromay/wp-starter",
+    "type": "wordpress-theme",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Jethro May",
+            "email": "hello@jethromay.com"
+        }
+    ],
+    "require": {
+        "php": "^7.2.5"
+    },
+    "require-dev": {
+        "automattic/vipwpcs": "^2.0",
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.6.2",
+        "squizlabs/php_codesniffer": "3.*"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "post-root-test-install": [
+            "vendor/bin/phpcs --config-set cinstalled_paths vendor/wp-coding-standards/wpcs,vendor/vipcs"
+        ]
+    }
+}

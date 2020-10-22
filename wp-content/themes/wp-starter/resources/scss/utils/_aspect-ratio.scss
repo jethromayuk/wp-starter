@@ -1,0 +1,62 @@
+/* -------------------------------------------------------------------------- */
+
+/* ---------- ASPECT RATIOS  ------------------------------------------------ */
+
+/* -------------------------------------------------------------------------- */
+
+@mixin aspect-ratio {
+  height: 0;
+  overflow: hidden;
+  position: relative;
+  video,
+  embed,
+  iframe,
+  svg,
+  img {
+    position: absolute;
+  }
+}
+@mixin aspect-ratio--1x1 {
+  @include aspect-ratio;
+  padding-bottom: 100%; //ensure square 1:1 ratio
+}
+@mixin aspect-ratio--4x3 {
+  @include aspect-ratio;
+  padding-bottom: 75%; //ensure 4:3 ratio
+}
+@mixin aspect-ratio--3x2 {
+  @include aspect-ratio;
+  padding-bottom: 66.667%; //ensure 3:2 ratio
+}
+@mixin aspect-ratio--3x1 {
+  @include aspect-ratio;
+  padding-bottom: 33.333%; //ensure 3:2 ratio
+}
+@mixin aspect-ratio--4x1 {
+  @include aspect-ratio;
+  padding-bottom: 25%; //ensure 3:2 ratio
+}
+@mixin aspect-ratio--16x9 {
+  @include aspect-ratio;
+  padding-bottom: 56.25%; //ensure 16:9 ratio
+}
+@mixin aspect-ratio--2x1 {
+  @include aspect-ratio;
+  padding-bottom: 50%; //ensure 3:2 ratio
+}
+@mixin aspect-ratio--portrait {
+  @include aspect-ratio;
+  padding-bottom: 177.778%; //ensure 16:9 ratio
+}
+@mixin aspect-ratio--portrait-2x1 {
+  @include aspect-ratio;
+  padding-bottom: 88.889%; //ensure 32:9 ratio
+}
+@mixin aspect-ratio--letterbox {
+  @include aspect-ratio;
+  padding-bottom: 28.125%; //ensure 32:9 ratio
+}
+@mixin aspect-ratio--slit {
+  @include aspect-ratio;
+  padding-bottom: 14.0625%; //ensure 64:9 ratio
+}

@@ -1,0 +1,48 @@
+{
+	"name": "wp-starter",
+	"version": "1.1.3",
+	"description": "A WordPress starter theme with modern practices.",
+	"scripts": {
+		"dev": "npm run development",
+		"development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+		"watch": "npm run development -- --watch",
+		"watch-poll": "npm run watch -- --watch-poll",
+		"hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+		"prod": "npm run production",
+		"production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+		"lint:scss": "stylelint '**/*.scss' --syntax scss -f verbose --color",
+		"lint:scss:fix": "stylelint '**/*.scss' --syntax scss --fix -f verbose —color"
+	},
+	"husky": {
+		"hooks": {
+            "pre-commit": "npm run lint:scss && tests/run"
+		}
+	},
+	"author": "Jethro May <hello@jethromay.com>",
+	"license": "GPL-3.0",
+	"devDependencies": {
+		"browser-sync": "^2.26.13",
+		"browser-sync-webpack-plugin": "^2.0.1",
+		"cross-env": "^5.1",
+		"cssnano": "^4.1.10",
+		"husky": "^4.2.5",
+		"laravel-mix": "^5.0.4",
+		"laravel-mix-stylelint": "^0.2.0",
+		"resolve-url-loader": "^2.3.1",
+		"sass": "^1.26.8",
+		"sass-loader": "^8.0.0",
+		"stylelint": "^13.6.1",
+		"stylelint-scss": "^3.18.0",
+		"stylelint-webpack-plugin": "^2.1.1",
+		"vue-template-compiler": "^2.6.11"
+	},
+	"dependencies": {
+		"bootstrap": "^4.5.3",
+		"jquery": "^3.5.1",
+		"popper.js": "^1.16.1"
+	},
+	"browserslist": [
+		"> 5%",
+		"last 2 versions"
+	]
+}

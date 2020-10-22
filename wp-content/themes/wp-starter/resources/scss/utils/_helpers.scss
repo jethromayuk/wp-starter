@@ -1,0 +1,22 @@
+// Automatically add the vendor prefixes for a property.
+// Example usage: @include auto-prefix(transform, translateX(1rem));
+@mixin auto-prefix($prop, $value) {
+    -webkit-#{$prop}: #{$value};
+    -moz-#{$prop}: #{$value};
+    -ms-#{$prop}: #{$value};
+    -o-#{$prop}: #{$value};
+    #{$prop}: #{$value};
+}
+
+/*
+Gradient background.
+
+Usage:
+   @include gradient-bg(to top, rgba($purple, 0.9), 50%, transparent);
+*/
+@mixin gradient-bg($conf...) {
+    background: -webkit-linear-gradient($conf);
+    background: -moz-linear-gradient($conf);
+    background: -o-linear-gradient($conf);
+    background: linear-gradient($conf);
+}

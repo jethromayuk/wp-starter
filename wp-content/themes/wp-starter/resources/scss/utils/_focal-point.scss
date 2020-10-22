@@ -1,0 +1,135 @@
+/* -------------------------------------------------------------------------- */
+
+/* ---------- FOCAL POINTS  ------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+
+@mixin focus-top--left {
+  background-position: left top;
+  video,
+  img {
+    object-position: 0% 0%;
+    @supports not (object-position: 0% 0%) {
+      bottom: auto;
+      left: 0;
+      right: auto;
+      top: 0;
+      transform: translate(0, 0);
+    }
+  }
+}
+@mixin focus-top--center {
+  background-position: center top;
+  video,
+  img {
+    object-position: 50% 0%;
+    @supports not (object-position: 0% 0%) {
+      bottom: auto;
+      left: 50%;
+      right: auto;
+      top: 0;
+      transform: translate(-50%, 0);
+    }
+  }
+}
+@mixin focus-top--right {
+  background-position: right top;
+  video,
+  img {
+    object-position: 100% 0%;
+    @supports not (object-position: 0% 0%) {
+      bottom: auto;
+      left: auto;
+      right: 0;
+      top: 0;
+      transform: translate(0, 0);
+    }
+  }
+}
+//--------------------------------------
+@mixin focus-center--left {
+  background-position: left center;
+  video,
+  img {
+    object-position: 0% 50%;
+    @supports not (object-position: 0% 0%) {
+      bottom: auto;
+      left: 0;
+      right: auto;
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+  }
+}
+@mixin focus-center--center {
+  background-position: center center;
+  video,
+  img {
+    object-position: 50% 50%;
+    @supports not (object-position: 0% 0%) {
+      bottom: auto;
+      left: 50%;
+      right: auto;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+@mixin focus-center--right {
+  background-position: right center;
+  video,
+  img {
+    object-position: 100% 50%;
+    @supports not (object-position: 0% 0%) {
+      bottom: auto;
+      left: auto;
+      right: 0;
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+  }
+}
+//--------------------------------------
+@mixin focus-bottom--left {
+  background-position: left bottom;
+  video,
+  img {
+    object-position: 0% 100%;
+    @supports not (object-position: 0% 0%) {
+      bottom: 0;
+      left: 0;
+      right: auto;
+      top: auto;
+      transform: none;
+      transform: translate(0, 0);
+    }
+  }
+}
+@mixin focus-bottom--center {
+  background-position: center bottom;
+  video,
+  img {
+    object-position: 50% 100%;
+    @supports not (object-position: 0% 0%) {
+      bottom: 0;
+      left: 50%;
+      right: auto;
+      top: auto;
+      transform: translate(-50%, 0);
+    }
+  }
+}
+@mixin focus-bottom--right {
+  background-position: right bottom;
+  video,
+  img {
+    object-position: 100% 100%;
+    @supports not (object-position: 0% 0%) {
+      bottom: 0;
+      left: auto;
+      right: 0;
+      top: auto;
+      transform: translate(0, 0);
+    }
+  }
+}

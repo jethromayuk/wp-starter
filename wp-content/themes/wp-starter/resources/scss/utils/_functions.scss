@@ -1,0 +1,23 @@
+@function str-replace( $string, $search, $replace: '' ) {
+
+  $index: str-index( $string, $search );
+
+  @if $index {
+    @return str-slice( $string, 1, $index - 1 ) + $replace + str-replace( str-slice( $string, $index + str-length( $search ) ), $search, $replace);
+  }
+
+  @return $string;
+}
+
+@function get-icon( $icon, $colour: #fff ) {
+
+  @if 'color' != type-of( $colour ) {
+    $colour: #000000;
+  }
+
+  $icon: map-get( $icons, $icon );
+  $data-svg-prefix: 'data:image/svg+xml;utf-8,';
+  $data-uri: str-replace(url($data-svg-prefix + $icon ), '2000/svg"', '2000/svg" fill="' + $colour + '"');
+
+  @return str-replace($data-uri, '#', '%23');
+}

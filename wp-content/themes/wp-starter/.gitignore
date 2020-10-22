@@ -1,0 +1,50 @@
+# Packages #
+############
+*.7z
+*.dmg
+*.gz
+*.bz2
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.tgz
+*.map
+
+# Env files #
+######################
+.env
+
+# Logs and databases #
+######################
+*.log
+*.sql
+
+# OS generated files #
+######################
+**.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
+._*
+
+# Vim generated files #
+######################
+*.un~
+
+# NPM #
+##########
+node_modules
+package-lock.json
+yarn.lock
+
+# PhpStorm Project Files #
+.idea/
+resources/img/.DS_Store
+
+# VSCode Workspace Settings #
+.vscode
+
+# Composer #
+/vendor

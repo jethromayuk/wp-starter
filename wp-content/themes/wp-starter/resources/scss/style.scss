@@ -1,0 +1,19 @@
+// Import Bootstrap.
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+// Import theme utils.
+@import 'utils/aspect-ratio';
+@import 'utils/breakpoints';
+@import 'utils/focal-point';
+@import 'utils/functions';
+@import 'utils/helpers';
+@import 'utils/position';
+
+// Import theme configuration.
+@import '_config/colors';
+
+// Import all component styles
+@import '../../components/header/header';
+
+// Import theme template pages.
+@import 'templates/front';
