@@ -79,6 +79,9 @@ if(!class_exists('JM_CORE')) :
             // Helpers
             include_once JM_PATH . 'includes/helpers.php';
 
+            // Walkers
+            include_once JM_PATH . 'walkers/bootstrap.php';
+
             // Include components.
             jm_include('includes/components.php');
 

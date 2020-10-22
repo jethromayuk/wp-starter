@@ -88,7 +88,7 @@
             {
                 "param": "options_page",
                 "operator": "==",
-                "value": "theme-general-settings"
+                "value": "general-settings"
             }
         ]
     ],
@@ -103,7 +103,7 @@
         "discussion",
         "comments"
     ],
-    "active": 1,
+    "active": true,
     "description": "A collection of fields which are used in the theme settings.",
-    "modified": 1578898204
+    "modified": 1603382759
 }
