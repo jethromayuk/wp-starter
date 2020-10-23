@@ -1,22 +1,24 @@
 <?php //** HEADER COMPONENT */ ?>
 <header id="header" role="banner" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		<a class="navbar-brand" href="<?php echo esc_url( home_url() ); ?>">Test</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu-content" aria-controls="navbar-menu-content" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-
-		<div class="collapse navbar-collapse" id="navbar-menu-content">
-		<?php
-		wp_nav_menu(
-			array(
-				'theme_location' => 'primary',
-				'depth'          => 3,
-				'walker'         => new WP_Bootstrap_Navwalker,
-			)
-		);
-		?>
-		</div>
-	</nav>
+    <nav class="navbar navbar-expand-md navbar-light bg-light" role="navigation" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+        <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="<?php echo esc_url( home_url() ); ?>" itemscope="itemscope" itemtype="http://schema.org/Organization">Logo</a>
+            <?php
+            wp_nav_menu( array(
+                'theme_location'    => 'primary',
+                'depth'             => 2,
+                'container'         => 'div',
+                'container_class'   => 'collapse navbar-collapse',
+                'container_id'      => 'bs-example-navbar-collapse-1',
+                'menu_class'        => 'nav navbar-nav',
+                'walker'            => new WP_Bootstrap_Navwalker()
+            ) );
+            ?>
+        </div>
+    </nav>
 </header>
 <?php

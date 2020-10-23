@@ -1,6 +1,6 @@
 {
     "key": "group_5de6707452cfb",
-    "title": "Theme Settings",
+    "title": "General Settings",
     "fields": [
         {
             "key": "field_5de670b3bdf37",
@@ -105,5 +105,5 @@
     ],
     "active": true,
     "description": "A collection of fields which are used in the theme settings.",
-    "modified": 1603382759
+    "modified": 1603383226
 }
