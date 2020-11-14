@@ -15,7 +15,7 @@
 	},
 	"husky": {
 		"hooks": {
-            "pre-commit": "npm run lint:scss && tests/run"
+			"pre-commit": "npm run lint:scss && tests/run"
 		}
 	},
 	"author": "Jethro May <hello@jethromay.com>",
@@ -26,10 +26,10 @@
 		"cross-env": "^5.1",
 		"cssnano": "^4.1.10",
 		"husky": "^4.2.5",
-		"laravel-mix": "^5.0.4",
+		"laravel-mix": "^5.0.9",
 		"laravel-mix-stylelint": "^0.2.0",
 		"resolve-url-loader": "^2.3.1",
-		"sass": "^1.26.8",
+		"sass": "^1.29.0",
 		"sass-loader": "^8.0.0",
 		"stylelint": "^13.6.1",
 		"stylelint-scss": "^3.18.0",

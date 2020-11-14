@@ -40,6 +40,7 @@ require $composer;
 */
 
 get_template_part( 'functions/admin' );
+get_template_part( 'functions/query' );
 get_template_part( 'functions/plugins' );
 get_template_part( 'functions/api' );
 get_template_part( 'functions/acf' );
