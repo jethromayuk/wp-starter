@@ -21,11 +21,12 @@
 	<meta itemprop="url" content="<?php echo esc_url( home_url( '/' ) ); ?>"/>
 
 	<link href="http://gmpg.org/xfn/11" rel="profile"/>
+    <link href="<?php bloginfo('pingback_url');?>" rel="pingback"/>
 
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> itemscope itemtype="http://schema.org/Blog">
 
 	<?php get_component( 'header/header' ); ?>
 
