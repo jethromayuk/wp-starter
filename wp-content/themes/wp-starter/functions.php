@@ -39,7 +39,9 @@ require $composer;
 |
 */
 
+get_template_part( 'functions/admin' );
 get_template_part( 'functions/plugins' );
+get_template_part( 'functions/api' );
 get_template_part( 'functions/acf' );
 get_template_part( 'functions/theme' );
 get_template_part( 'functions/content' );
