@@ -19,11 +19,36 @@
  * @return false|string
  */
 function get_component($slug, array $params = [], $output = true) {
+    $components = [];
+    $name = (string) $slug;
+
+    if ('' !== $name) {
+        $components[] = "app/components/{$slug}.php";
+    }
+
+    $components[] = "{$slug}.php";
+
+    $component = locate_template($components, false, false);
+
+    if (!$component) {
+        return;
+    }
+
+    if ($params) {
+        foreach($params as $key => $variable) {
+            $$key = $variable;
+        }
+    }
+
+    include($component);
+}
+
+function get_template_with_vars($slug, array $params = [], $output = true) {
     $templates = [];
     $name = (string) $slug;
 
     if ('' !== $name) {
-        $templates[] = "components/{$slug}.php";
+        $templates[] = "app/templates/{$slug}.php";
     }
 
     $templates[] = "{$slug}.php";

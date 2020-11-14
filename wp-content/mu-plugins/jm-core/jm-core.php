@@ -82,8 +82,8 @@ if(!class_exists('JM_CORE')) :
             // Walkers
             include_once JM_PATH . 'walkers/bootstrap.php';
 
-            // Include components.
-            jm_include('includes/components.php');
+            // Include templating helpers.
+            jm_include('includes/templating.php');
 
             // Include cpt/taxonomy helpers.
             jm_include('includes/cpt.php');
