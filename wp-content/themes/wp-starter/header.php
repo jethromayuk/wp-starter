@@ -25,6 +25,8 @@
 
     <title></title>
 
+    <!-- Favicons -->
+
 	<?php wp_head(); ?>
 </head>
 

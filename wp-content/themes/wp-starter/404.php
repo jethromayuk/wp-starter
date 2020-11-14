@@ -1,27 +1,14 @@
-<?php
-/**
- * The template for displaying 404 pages (not found)
- *
- * @link https://codex.wordpress.org/Creating_an_Error_404_Page
- *
- * @package wp-starter
- */
+<?php get_header();?>
 
-get_header();
-?>
+<article class="page type-404 hentry no-post-embed no-post-thumbnail">
 
-<section class="error-404 not-found">
-	<header>
-		<h1><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'theme' ); ?></h1>
-	</header><!-- .page-header -->
+  <header class="page-header">
 
-	<div>
-		<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'theme' ); ?>
-		</p>
+    <h1 class="page-title">Sorry</h1>
+    <h2 class="page-subtitle">It looks like nothing was found at this location. Try going back to the <a href="<?php echo esc_url( home_url() ); ?>">home page</a></h2>
 
-		<?php get_search_form(); ?>
-	</div><!-- .page-content -->
-</section><!-- .error-404 -->
+  </header>
 
-<?php
-get_footer();
+</article>
+
+<?php get_footer();
