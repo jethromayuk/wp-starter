@@ -21,11 +21,11 @@
 	<meta itemprop="url" content="<?php echo esc_url( home_url( '/' ) ); ?>"/>
 
 	<link href="http://gmpg.org/xfn/11" rel="profile"/>
-    <link href="<?php bloginfo('pingback_url');?>" rel="pingback"/>
+	<link href="<?php bloginfo( 'pingback_url' ); ?>" rel="pingback"/>
 
-    <title></title>
+	<title></title>
 
-    <!-- Favicons -->
+	<!-- Favicons -->
 
 	<?php wp_head(); ?>
 </head>

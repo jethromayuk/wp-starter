@@ -1,4 +1,4 @@
-<?php get_header();?>
+<?php get_header(); ?>
 
 <article class="page type-404 hentry no-post-embed no-post-thumbnail">
 

@@ -1,6 +1,6 @@
 <?php
 get_header();
 //------------------------------------------------------------------------------
-get_template_with_vars('app/templates/index');
+get_template_with_vars( 'app/templates/index' );
 //------------------------------------------------------------------------------
 get_footer();

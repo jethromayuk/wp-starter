@@ -1,3 +1,3 @@
-<article <?php post_class();?>>
+<article <?php post_class(); ?>>
 
 </article>
