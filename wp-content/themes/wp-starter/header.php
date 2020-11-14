@@ -23,6 +23,8 @@
 	<link href="http://gmpg.org/xfn/11" rel="profile"/>
     <link href="<?php bloginfo('pingback_url');?>" rel="pingback"/>
 
+    <title></title>
+
 	<?php wp_head(); ?>
 </head>
 
