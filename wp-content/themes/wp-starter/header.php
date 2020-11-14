@@ -1,18 +1,5 @@
-<?php
-/**
- * The header for our theme
- *
- * @category Theme
- * @package  WP-Starter
- * @author   Jethro May <hello@jethromay.com>
- * @license  https://www.gnu.org/licenses/gpl-3.0.txt MIT
- * @link     https://github.com/jethromay/wp-starter
- */
-
-?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
-
 <head>
 	<meta charset="utf-8"/>
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
