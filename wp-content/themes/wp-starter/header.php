@@ -30,4 +30,4 @@
 
 	<?php get_component( 'header/header' ); ?>
 
-	<main id="main" class="site-main">
+	<main id="main" role="main">
