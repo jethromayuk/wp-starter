@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Query Monitor - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-08-20 11:31:56+0000\n"
+"PO-Revision-Date: 2020-11-13 19:36:43+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,16 @@ msgstr ""
 "X-Generator: GlotPress/3.0.0-alpha.2\n"
 "Language: en_GB\n"
 "Project-Id-Version: Plugins - Query Monitor - Stable (latest release)\n"
+
+#. translators: %s: Dependency name
+#: classes/Util.php:141
+msgid "Dependency: %s"
+msgstr "Dependency: %s"
+
+#. translators: %s: Link to help article
+#: output/html/logger.php:36
+msgid "No data logged. <a href=\"%s\">Read about logging variables in Query Monitor</a>."
+msgstr "No data logged. <a href=\"%s\">Read about logging variables in Query Monitor</a>."
 
 #: output/html/environment.php:254
 msgid "Environment Type"
@@ -54,7 +64,7 @@ msgid "Editor"
 msgstr "Editor"
 
 #. translators: %s: Number of logs that are available
-#: output/html/logger.php:175
+#: output/html/logger.php:176
 msgid "Logs (%s)"
 msgstr "Logs (%s)"
 
@@ -122,14 +132,14 @@ msgstr "Unknown HTTP Response Code"
 msgid "Request Data"
 msgstr "Request Data"
 
-#: dispatchers/Html.php:474
-msgid "Enable dark mode for Query Monitor's interface."
-msgstr "Enable dark mode for Query Monitor's interface."
-
 #. translators: %s: Default value for a PHP constant
 #: dispatchers/Html.php:539
 msgid "Default value: %s"
 msgstr "Default value: %s"
+
+#: dispatchers/Html.php:474
+msgid "Enable dark mode for Query Monitor's interface."
+msgstr "Enable dark mode for Query Monitor's interface."
 
 #: output/html/theme.php:120
 msgid "Not Loaded"
@@ -317,6 +327,10 @@ msgstr "The %s extension for PHP is installed but is not in use by WordPress"
 msgid "PHP errors were triggered during an Ajax request. See your browser developer console for details."
 msgstr "PHP errors were triggered during an Ajax request. See your browser developer console for details."
 
+#: output/html/logger.php:178
+msgid "Logs"
+msgstr "Logs"
+
 #: output/html/http.php:335
 msgid "No HTTP API calls."
 msgstr "No HTTP API calls."
@@ -435,6 +449,10 @@ msgstr "Unsupported log level"
 msgid "Logger"
 msgstr "Logger"
 
+#. Description of the plugin
+msgid "The Developer Tools Panel for WordPress."
+msgstr "The Developer Tools Panel for WordPress."
+
 #. translators: %s: Number of function timing results that are available
 #: output/html/timing.php:184
 msgid "Timings (%s)"
@@ -504,11 +522,11 @@ msgid_plural "%s Deprecated"
 msgstr[0] "%s Deprecated"
 msgstr[1] "%s Deprecated"
 
-#: output/html/logger.php:44 output/html/php_errors.php:53
+#: output/html/php_errors.php:53 output/html/logger.php:55
 msgid "Message"
 msgstr "Message"
 
-#: output/html/logger.php:42 output/html/php_errors.php:51
+#: output/html/php_errors.php:51 output/html/logger.php:53
 msgid "Level"
 msgstr "Level"
 
@@ -562,7 +580,7 @@ msgstr "URL"
 msgid "Method"
 msgstr "Method"
 
-#: output/Html.php:142 output/html/hooks.php:41
+#: output/html/hooks.php:41 output/Html.php:142
 msgid "Priority"
 msgstr "Priority"
 
@@ -664,7 +682,7 @@ msgid "Non-blocking"
 msgstr "Non-blocking"
 
 #. translators: %s: Plugin name
-#: classes/Util.php:165
+#: classes/Util.php:176
 msgid "VIP Client MU Plugin: %s"
 msgstr "VIP Client MU Plugin: %s"
 
@@ -674,7 +692,7 @@ msgid "Lap %d"
 msgstr "Lap %d"
 
 #. Translators: 1: Minimum required PHP version, 2: Current PHP version.
-#: classes/Activation.php:108
+#: classes/Activation.php:107
 msgid "The Query Monitor plugin requires PHP version %1$s or higher. This site is running version %2$s."
 msgstr "The Query Monitor plugin requires PHP version %1$s or higher. This site is running version %2$s."
 
@@ -709,8 +727,8 @@ msgstr "No capability checks were recorded."
 msgid "Result"
 msgstr "Result"
 
-#: output/html/caps.php:77 output/html/environment.php:70
-#: output/html/environment.php:185
+#: output/html/environment.php:70 output/html/environment.php:185
+#: output/html/caps.php:77
 msgid "User"
 msgstr "User"
 
@@ -865,7 +883,7 @@ msgstr "Header"
 msgid "Missing"
 msgstr "Missing"
 
-#: output/html/admin.php:43 output/html/admin.php:65 output/html/headers.php:65
+#: output/html/headers.php:65 output/html/admin.php:43 output/html/admin.php:65
 msgid "Value"
 msgstr "Value"
 
@@ -960,7 +978,7 @@ msgid "Duplicate Queries"
 msgstr "Duplicate Queries"
 
 #. translators: %s: Plugin name
-#: classes/Util.php:145
+#: classes/Util.php:156
 msgid "MU Plugin: %s"
 msgstr "MU Plugin: %s"
 
@@ -968,8 +986,8 @@ msgstr "MU Plugin: %s"
 msgid "Unknown location"
 msgstr "Unknown location"
 
-#: output/html/db_callers.php:99 output/html/languages.php:78
 #: output/html/theme.php:116 output/html/theme.php:141
+#: output/html/db_callers.php:99 output/html/languages.php:78
 msgid "None"
 msgstr "None"
 
@@ -1021,9 +1039,18 @@ msgstr "Languages"
 msgid "Debug Bar: %s"
 msgstr "Debug Bar: %s"
 
-#: classes/Util.php:284
+#: classes/Util.php:295
 msgid "Unable to determine source of lambda function"
 msgstr "Unable to determine source of lambda function"
+
+#. Author of the plugin
+msgid "John Blackbourn"
+msgstr "John Blackbourn"
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+msgid "https://querymonitor.com/"
+msgstr "https://querymonitor.com/"
 
 #. translators: %s: Symlink file location
 #: classes/QueryMonitor.php:137
@@ -1089,7 +1116,7 @@ msgid "Count"
 msgstr "Count"
 
 #. translators: %s: Memory used in kilobytes
-#: output/headers/overview.php:33 output/html/overview.php:119
+#: output/html/overview.php:119 output/headers/overview.php:33
 msgid "%s kB"
 msgstr "%s kB"
 
@@ -1106,13 +1133,13 @@ msgid "Page Generation Time"
 msgstr "Page Generation Time"
 
 #. translators: 1: Percentage of time limit used, 2: Time limit in seconds
-#: output/headers/overview.php:25 output/html/overview.php:92
+#: output/html/overview.php:92 output/headers/overview.php:25
 msgid "%1$s%% of %2$ss limit"
 msgstr "%1$s%% of %2$ss limit"
 
 #. translators: 1: Percentage of memory limit used, 2: Memory limit in
 #. kilobytes
-#: output/headers/overview.php:38 output/html/overview.php:131
+#: output/html/overview.php:131 output/headers/overview.php:38
 msgid "%1$s%% of %2$s kB limit"
 msgstr "%1$s%% of %2$s kB limit"
 
@@ -1134,11 +1161,11 @@ msgstr "Error: %s"
 msgid "Warning: The %s action is extremely resource intensive. Try to avoid using it."
 msgstr "Warning: The %s action is extremely resource intensive. Try to avoid using it."
 
-#: output/Html.php:110 output/html/hooks.php:42
+#: output/html/hooks.php:42 output/Html.php:110
 msgid "Action"
 msgstr "Action"
 
-#: output/Html.php:141 output/html/hooks.php:39
+#: output/html/hooks.php:39 output/Html.php:141
 msgid "Hook"
 msgstr "Hook"
 
@@ -1183,11 +1210,10 @@ msgstr "Extended query information such as the component and affected rows is no
 msgid "%s Queries"
 msgstr "%s Queries"
 
-#: output/html/logger.php:45 output/html/db_callers.php:41
+#: output/html/http.php:60 output/html/logger.php:56 output/html/caps.php:83
+#: output/html/db_callers.php:41 output/html/languages.php:40
 #: output/html/db_queries.php:82 output/html/db_queries.php:112
-#: output/html/db_queries.php:231 output/html/caps.php:83
-#: output/html/transients.php:42 output/html/languages.php:40
-#: output/html/http.php:60
+#: output/html/db_queries.php:231 output/html/transients.php:42
 msgid "Caller"
 msgstr "Caller"
 
@@ -1196,12 +1222,12 @@ msgstr "Caller"
 msgid "Slow Database Queries (above %ss)"
 msgstr "Slow Database Queries (above %ss)"
 
-#: output/Html.php:144 output/html/logger.php:47 output/html/db_queries.php:83
-#: output/html/db_queries.php:115 output/html/db_queries.php:240
-#: output/html/caps.php:85 output/html/transients.php:43
-#: output/html/hooks.php:44 output/html/php_errors.php:57
+#: output/html/php_errors.php:57 output/html/hooks.php:44
+#: output/html/http.php:62 output/html/logger.php:58 output/html/caps.php:85
 #: output/html/db_components.php:42 output/html/timing.php:43
-#: output/html/http.php:62
+#: output/html/db_queries.php:83 output/html/db_queries.php:115
+#: output/html/db_queries.php:240 output/html/transients.php:43
+#: output/Html.php:144
 msgid "Component"
 msgstr "Component"
 
@@ -1209,8 +1235,8 @@ msgstr "Component"
 msgid "Call stack:"
 msgstr "Call stack:"
 
-#: output/html/db_queries.php:81 output/html/db_queries.php:111
-#: output/html/db_queries.php:218 output/html/db_dupes.php:40
+#: output/html/db_dupes.php:40 output/html/db_queries.php:81
+#: output/html/db_queries.php:111 output/html/db_queries.php:218
 msgid "Query"
 msgstr "Query"
 
@@ -1218,9 +1244,9 @@ msgstr "Query"
 msgid "Database Errors"
 msgstr "Database Errors"
 
-#: output/html/db_callers.php:50 output/html/db_queries.php:122
-#: output/html/db_queries.php:256 output/html/db_components.php:51
-#: output/html/timing.php:41 output/html/http.php:65
+#: output/html/http.php:65 output/html/db_callers.php:50
+#: output/html/db_components.php:51 output/html/timing.php:41
+#: output/html/db_queries.php:122 output/html/db_queries.php:256
 msgid "Time"
 msgstr "Time"
 
@@ -1286,8 +1312,8 @@ msgid "PHP Errors in Ajax Response"
 msgstr "PHP Errors in Ajax Response"
 
 #. Plugin Name of the plugin
-#: dispatchers/Html.php:108 dispatchers/Html.php:333 dispatchers/Html.php:657
-#: dispatchers/WP_Die.php:134 classes/QueryMonitor.php:149
+#: dispatchers/WP_Die.php:134 dispatchers/Html.php:108 dispatchers/Html.php:333
+#: dispatchers/Html.php:665 classes/QueryMonitor.php:149
 #: classes/QueryMonitor.php:180 collectors/php_errors.php:292
 msgid "Query Monitor"
 msgstr "Query Monitor"
@@ -1341,7 +1367,7 @@ msgstr "Request timed out"
 msgid "Environment"
 msgstr "Environment"
 
-#: output/html/db_queries.php:28 output/html/overview.php:162
+#: output/html/overview.php:162 output/html/db_queries.php:28
 msgid "Database Queries"
 msgstr "Database Queries"
 
@@ -1362,46 +1388,46 @@ msgid "Admin Screen"
 msgstr "Admin Screen"
 
 #. translators: 1: Line number, 2: File name
-#: classes/Util.php:279
+#: classes/Util.php:290
 msgid "Anonymous function on line %1$d of %2$s"
 msgstr "Anonymous function on line %1$d of %2$s"
 
 #. translators: 1: Line number, 2: File name
-#: classes/Util.php:255
+#: classes/Util.php:266
 msgid "Closure on line %1$d of %2$s"
 msgstr "Closure on line %1$d of %2$s"
 
-#: classes/Util.php:198 output/headers/php_errors.php:39
-#: output/html/db_queries.php:330 output/html/db_queries.php:427
-#: output/html/environment.php:74 output/html/environment.php:196
-#: output/html/environment.php:299 output/html/overview.php:115
-#: output/html/php_errors.php:155 output/html/theme.php:63
-#: output/html/theme.php:184
+#: output/html/theme.php:63 output/html/theme.php:184
+#: output/html/php_errors.php:155 output/html/environment.php:74
+#: output/html/environment.php:196 output/html/environment.php:299
+#: output/html/overview.php:115 output/html/db_queries.php:330
+#: output/html/db_queries.php:427 output/headers/php_errors.php:39
+#: classes/Util.php:209
 msgid "Unknown"
 msgstr "Unknown"
 
-#: classes/Util.php:194 output/Html.php:264 output/html/hooks.php:59
+#: output/html/hooks.php:59 output/Html.php:264 classes/Util.php:205
 msgid "Core"
 msgstr "Core"
 
-#: classes/Util.php:181 output/html/theme.php:41
+#: output/html/theme.php:41 classes/Util.php:192
 msgid "Parent Theme"
 msgstr "Parent Theme"
 
-#: classes/Util.php:176 output/html/theme.php:24 output/html/theme.php:37
+#: output/html/theme.php:24 output/html/theme.php:37 classes/Util.php:187
 msgid "Theme"
 msgstr "Theme"
 
-#: classes/Util.php:174
+#: classes/Util.php:185
 msgid "Child Theme"
 msgstr "Child Theme"
 
 #. translators: %s: Plugin name
-#: classes/Util.php:168
+#: classes/Util.php:179
 msgid "VIP Plugin: %s"
 msgstr "VIP Plugin: %s"
 
 #. translators: %s: Plugin name
-#: classes/Util.php:148
+#: classes/Util.php:159
 msgid "Plugin: %s"
 msgstr "Plugin: %s"
